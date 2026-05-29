@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إنشاء حساب جديد - منصة الكورسات</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="login-container">
+        <h2>إنشاء حساب جديد</h2>
+        <p>قم بملء البيانات للانضمام للمنصة</p>
+
+        <form id="signupForm">
+            <div class="input-group">
+                <label for="username">اسم المستخدم الجديد (Username)</label>
+                <input type="text" id="username" required placeholder="ادخل اسم المستخدم">
+            </div>
+
+            <div class="input-group">
+                <label for="password">كلمة المرور (Password)</label>
+                <input type="password" id="password" required placeholder="اختر كلمة مرور قوية">
+            </div>
+
+            <div id="errorMsg" class="error-msg" style="display: none; color: #dc3545; background-color: #f8d7da; padding: 10px; margin-bottom: 15px; border-radius: 4px; border: 1px solid #f5c6cb; font-size: 14px; font-weight: bold;"></div>
+
+            <button type="submit" class="btn">تسجيل الحساب</button>
+        </form>
+
+        <p style="margin-top: 20px; font-size: 14px;">
+            لديك حساب بالفعل؟ <a href="login.html" style="color: #007bff; text-decoration: none; font-weight: bold;">سجل دخولك من هنا</a>
+        </p>
+    </div>
+
+    <script src="js/signup.js"></script>
+</body>
+</html>

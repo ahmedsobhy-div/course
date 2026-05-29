@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوحة تحكم المدرس - منصة الكورسات</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="admin-container">
+        <h2 class="admin-title">👨‍🏫 لوحة تحكم المدرس - إدارة المنصة</h2>
+        
+        <div style="background-color: #f8f9fa; padding: 20px; border-radius: 8px; border: 1px solid #ccd0d5; margin-bottom: 30px;">
+            <h3 style="color: #1a237e; margin-bottom: 15px;">🎬 رفع محاضرة أو فيديو جديد</h3>
+            <form id="uploadVideoForm">
+                <div class="input-group">
+                    <label for="videoTitleInput">عنوان المحاضرة / الفيديو:</label>
+                    <input type="text" id="videoTitleInput" placeholder="مثال: مراجعة الباب الأول، حل الشيت..." required>
+                </div>
+
+                <div class="input-group">
+                    <label for="videoFileInput">اختر ملف الفيديو من جهازك (MP4):</label>
+                    <input type="file" id="videoFileInput" accept="video/mp4" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="videoMonthSelect">تحديد الشهر الدراسي:</label>
+                    <select id="videoMonthSelect" class="select-month" style="width: 100%; padding: 12px;" required>
+                        <option value="" disabled selected>اختر الشهر الدراسي...</option>
+                        <option value="1">شهر 1</option>
+                        <option value="2">شهر 2</option>
+                        <option value="3">شهر 3</option>
+                        <option value="4">شهر 4</option>
+                        <option value="5">شهر 5</option>
+                        <option value="6">شهر 6</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn" style="background-color: #ff5722;">🚀 بدء رفع الفيديو الآن</button>
+            </form>
+            <div id="uploadStatus" style="margin-top: 15px; font-weight: bold; text-align: center; color: #1a237e;"></div>
+        </div>
+
+        <div class="video-management-wrapper" style="margin-bottom: 40px;">
+            <h2 class="admin-title" style="border-bottom-color: #2ecc71;">🎬 الفيديوهات والمحاضرات المرفوعة حالياً</h2>
+            <table class="students-table">
+                <thead>
+                    <tr>
+                        <th>عنوان المحاضرة</th>
+                        <th>الشهر الدراسي</th>
+                        <th>رابط الفيديو</th>
+                        <th>إجراءات</th>
+                    </tr>
+                </thead>
+                <tbody id="videosTableBody">
+                    <tr>
+                        <td colspan="4" style="color: #666; font-style: italic;">جاري تحميل الفيديوهات...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div>
+            <h2 class="admin-title">👥 إدارة الطلاب المسجلين</h2>
+            <table class="students-table">
+                <thead>
+                    <tr>
+                        <th>اسم المستخدم (الطالب)</th>
+                        <th>كلمة المرور</th>
+                        <th>الشهر المدفوع حالياً</th>
+                        <th>حالة الحساب</th>
+                        <th>إجراءات</th>
+                    </tr>
+                </thead>
+                <tbody id="studentsTableBody">
+                    </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <script src="js/admin.js"></script>
+</body>
+</html>

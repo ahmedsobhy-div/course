@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منصة الكورسات - منصة الكورسات التعليمية</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="page-container">
+        <header class="main-header">
+            <h1>📚 منصة الكورسات التعليمية</h1>
+            <button id="logoutBtn" class="logout-button" style="background-color: #dc3545; color: white; border: none; padding: 8px 15px; border-radius: 5px; cursor: pointer;">تسجيل الخروج 🚪</button>
+        </header>
+
+        <div class="content-area">
+            <aside class="sidebar">
+                <h3 id="monthTitle">محاضرات الشهر</h3>
+                <ul class="session-list" id="sessionsList">
+                    </ul>
+            </aside>
+
+            <main class="video-area">
+                <div class="video-box" id="videoPlayer" style="background: #000; min-height: 380px; display: flex; align-items: center; justify-content: center; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.15);">
+                    <div style="color: #aaa; font-size: 18px; text-align: center; padding: 20px;" id="placeholderText">
+                        ◀️ اختر محاضرة من القائمة الجانبية لبدء الشرح والمشاهدة
+                    </div>
+                </div>
+                <h2 id="videoTitle" style="margin-top: 20px; color: #333; font-size: 22px;">اسم المحاضرة سيظهر هنا</h2>
+            </main>
+        </div>
+    </div>
+
+    <script src="js/sessions.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل الدخول - منصة الكورسات</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="login-container">
+        <h2>منصة الكورسات</h2>
+        <p>سجل دخولك لمتابعة محاضراتك</p>
+
+        <form id="loginForm">
+            <div class="input-group">
+                <label for="username">اسم المستخدم</label>
+                <input type="text" id="username" required placeholder="ادخل اسم المستخدم">
+            </div>
+
+            <div class="input-group">
+                <label for="password">كلمة المرور</label>
+                <input type="password" id="password" required placeholder="ادخل كلمة المرور">
+            </div>
+
+            <div id="errorMsg" class="error-msg" style="display: none; color: #dc3545; background-color: #f8d7da; padding: 10px; margin-bottom: 15px; border-radius: 4px; border: 1px solid #f5c6cb; font-size: 14px; font-weight: bold;"></div>
+
+            <button type="submit" class="btn">دخول للمنصة</button>
+        </form>
+
+        <p style="margin-top: 20px; font-size: 14px;">
+            ليس لديك حساب؟ <a href="signup.html" style="color: #007bff; text-decoration: none; font-weight: bold;">أنشئ حساب جديد من هنا</a>
+        </p>
+    </div>
+
+    <script src="js/auth.js"></script>
+</body>
+</html>
